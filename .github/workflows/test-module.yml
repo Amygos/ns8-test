@@ -16,3 +16,4 @@ jobs:
     with:
       args: "ghcr.io/${{needs.module.outputs.owner}}/${{needs.module.outputs.name}}:${{needs.module.outputs.tag}}"
       repo_ref: ${{needs.module.outputs.sha}}
+      debug_shell: true
